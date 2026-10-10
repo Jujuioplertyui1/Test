@@ -2,6 +2,8 @@
 
 Haki that actually matters, six Devil Fruits, a cinematic **Haki Clash**, and **Varek, the Crimson King**, a Conqueror's Haki pirate captain who clashes wills with you.
 
+![Grand Line: Haki Clash](dist/showcase.png)
+
 > Requires **Minecraft Bedrock 1.26.10 or newer** (Script API `@minecraft/server` 2.6.0, stable). No experimental toggles needed.
 
 ## Install
