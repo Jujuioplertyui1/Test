@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:raw_seastone",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_raw_seastone",
+      "minecraft:display_name": {
+        "value": "item.grandline.raw_seastone.name"
+      },
+      "minecraft:max_stack_size": 64
+    }
+  }
+}

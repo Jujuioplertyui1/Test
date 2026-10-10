@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "grandline:clash_fog"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 6.0,
+        "fog_end": 72.0,
+        "fog_color": "#2A0207",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 4.0,
+        "fog_end": 48.0,
+        "fog_color": "#1A0104",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

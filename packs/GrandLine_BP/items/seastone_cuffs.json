@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:seastone_cuffs",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_seastone_cuffs",
+      "minecraft:display_name": {
+        "value": "item.grandline.seastone_cuffs.name"
+      },
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

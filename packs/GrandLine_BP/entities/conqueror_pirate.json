@@ -1,0 +1,211 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "grandline:conqueror_pirate",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "grandline:phase": {
+          "type": "int",
+          "range": [
+            1,
+            2
+          ],
+          "default": 1,
+          "client_sync": true
+        },
+        "grandline:charging": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "grandline:clashing": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "grandline:stunned": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "grandline:enraged": {
+        "minecraft:movement": {
+          "value": 0.36
+        },
+        "minecraft:attack": {
+          "damage": 15
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "pirate",
+          "conqueror",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 400,
+        "max": 400
+      },
+      "minecraft:attack": {
+        "damage": 11
+      },
+      "minecraft:movement": {
+        "value": 0.31
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "can_open_doors": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 2.15
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.75
+      },
+      "minecraft:follow_range": {
+        "value": 48,
+        "max": 48
+      },
+      "minecraft:boss": {
+        "hud_range": 55,
+        "should_darken_sky": true
+      },
+      "minecraft:persistent": {},
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/conqueror_pirate.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/equipment/conqueror_pirate_gear.json",
+        "slot_drop_chance": [
+          {
+            "slot": "slot.weapon.mainhand",
+            "drop_chance": 0
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "250"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "pirate"
+          }
+        }
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "track_target": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": false,
+        "reselect_targets": true,
+        "within_radius": 40,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 40
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "irongolem"
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 16
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      }
+    },
+    "events": {
+      "grandline:phase_two": {
+        "add": {
+          "component_groups": [
+            "grandline:enraged"
+          ]
+        },
+        "set_property": {
+          "grandline:phase": 2
+        }
+      },
+      "grandline:clash_start": {
+        "set_property": {
+          "grandline:clashing": true
+        }
+      },
+      "grandline:clash_end": {
+        "set_property": {
+          "grandline:clashing": false
+        }
+      },
+      "grandline:stunned": {
+        "set_property": {
+          "grandline:stunned": true
+        }
+      },
+      "grandline:recover": {
+        "set_property": {
+          "grandline:stunned": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "grandline:seastone_ore_feature"
+    },
+    "count": 6,
+    "replace_rules": [
+      {
+        "places_block": "grandline:seastone_ore",
+        "may_replace": [
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:gravel",
+          "minecraft:andesite",
+          "minecraft:diorite",
+          "minecraft:granite",
+          "minecraft:tuff"
+        ]
+      }
+    ]
+  }
+}

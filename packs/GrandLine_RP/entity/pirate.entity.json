@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "grandline:pirate",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "brawler": "textures/grandline/entity/pirate_brawler",
+        "gunner": "textures/grandline/entity/pirate_gunner",
+        "flame": "textures/grandline/entity/pirate_flame"
+      },
+      "geometry": {
+        "default": "geometry.grandline.pirate"
+      },
+      "spawn_egg": {
+        "base_color": "#2B3A67",
+        "overlay_color": "#E8E1D0"
+      },
+      "particle_effects": {
+        "flames": "grandline:pirate_flames"
+      },
+      "scripts": {
+        "animate": [
+          "walk",
+          "look",
+          "idle",
+          "attack",
+          "ctrl_ko",
+          "ctrl_flames"
+        ]
+      },
+      "animations": {
+        "walk": "animation.grandline.humanoid.walk",
+        "look": "animation.grandline.humanoid.look",
+        "idle": "animation.grandline.humanoid.idle",
+        "attack": "animation.grandline.humanoid.attack",
+        "ko": "animation.grandline.humanoid.ko",
+        "flames": "animation.grandline.pirate.flames",
+        "ctrl_ko": "controller.animation.grandline.ko",
+        "ctrl_flames": "controller.animation.grandline.pirate_flames"
+      },
+      "render_controllers": [
+        "controller.render.grandline.pirate"
+      ],
+      "enable_attachables": true
+    }
+  }
+}

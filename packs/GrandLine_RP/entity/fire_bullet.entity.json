@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "grandline:fire_bullet",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/grandline/entity/blank"
+      },
+      "geometry": {
+        "default": "geometry.grandline.empty"
+      },
+      "render_controllers": [
+        "controller.render.grandline.default"
+      ],
+      "scripts": {
+        "animate": [
+          "trail"
+        ]
+      },
+      "animations": {
+        "trail": "animation.grandline.projectile.trail"
+      },
+      "particle_effects": {
+        "trail": "grandline:fire_bullet_trail"
+      }
+    }
+  }
+}

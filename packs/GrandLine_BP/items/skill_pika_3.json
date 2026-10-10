@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:skill_pika_3",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_skill_pika_3",
+      "minecraft:display_name": {
+        "value": "item.grandline.skill_pika_3.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:cooldown": {
+        "category": "grandline_pika_3",
+        "duration": 5.0
+      },
+      "grandline:skill": {
+        "fruit": "pika",
+        "slot": 3
+      }
+    }
+  }
+}

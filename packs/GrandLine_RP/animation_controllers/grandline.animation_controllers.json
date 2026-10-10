@@ -1,0 +1,68 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.grandline.ko": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "ko": "query.property('grandline:stunned')"
+            }
+          ]
+        },
+        "ko": {
+          "animations": [
+            "ko"
+          ],
+          "transitions": [
+            {
+              "default": "!query.property('grandline:stunned')"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.grandline.captain_clash": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "clash": "query.property('grandline:clashing')"
+            }
+          ]
+        },
+        "clash": {
+          "animations": [
+            "clash_pose"
+          ],
+          "transitions": [
+            {
+              "default": "!query.property('grandline:clashing')"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    },
+    "controller.animation.grandline.pirate_flames": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "burning": "query.variant == 2"
+            }
+          ]
+        },
+        "burning": {
+          "animations": [
+            "flames"
+          ]
+        }
+      }
+    }
+  }
+}

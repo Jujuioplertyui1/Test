@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:haki_codex",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_haki_codex",
+      "minecraft:display_name": {
+        "value": "item.grandline.haki_codex.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "grandline:codex": {}
+    }
+  }
+}

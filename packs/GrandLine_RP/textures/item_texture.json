@@ -1,0 +1,114 @@
+{
+  "resource_pack_name": "grandline",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "grandline_armament_haki": {
+      "textures": "textures/grandline/items/armament_haki"
+    },
+    "grandline_observation_haki": {
+      "textures": "textures/grandline/items/observation_haki"
+    },
+    "grandline_conqueror_haki": {
+      "textures": "textures/grandline/items/conqueror_haki"
+    },
+    "grandline_haki_codex": {
+      "textures": "textures/grandline/items/haki_codex"
+    },
+    "grandline_gomu_gomu_no_mi": {
+      "textures": "textures/grandline/items/gomu_gomu_no_mi"
+    },
+    "grandline_mera_mera_no_mi": {
+      "textures": "textures/grandline/items/mera_mera_no_mi"
+    },
+    "grandline_hie_hie_no_mi": {
+      "textures": "textures/grandline/items/hie_hie_no_mi"
+    },
+    "grandline_goro_goro_no_mi": {
+      "textures": "textures/grandline/items/goro_goro_no_mi"
+    },
+    "grandline_gura_gura_no_mi": {
+      "textures": "textures/grandline/items/gura_gura_no_mi"
+    },
+    "grandline_pika_pika_no_mi": {
+      "textures": "textures/grandline/items/pika_pika_no_mi"
+    },
+    "grandline_skill_gomu_1": {
+      "textures": "textures/grandline/items/skill_gomu_1"
+    },
+    "grandline_skill_gomu_2": {
+      "textures": "textures/grandline/items/skill_gomu_2"
+    },
+    "grandline_skill_gomu_3": {
+      "textures": "textures/grandline/items/skill_gomu_3"
+    },
+    "grandline_skill_mera_1": {
+      "textures": "textures/grandline/items/skill_mera_1"
+    },
+    "grandline_skill_mera_2": {
+      "textures": "textures/grandline/items/skill_mera_2"
+    },
+    "grandline_skill_mera_3": {
+      "textures": "textures/grandline/items/skill_mera_3"
+    },
+    "grandline_skill_hie_1": {
+      "textures": "textures/grandline/items/skill_hie_1"
+    },
+    "grandline_skill_hie_2": {
+      "textures": "textures/grandline/items/skill_hie_2"
+    },
+    "grandline_skill_hie_3": {
+      "textures": "textures/grandline/items/skill_hie_3"
+    },
+    "grandline_skill_goro_1": {
+      "textures": "textures/grandline/items/skill_goro_1"
+    },
+    "grandline_skill_goro_2": {
+      "textures": "textures/grandline/items/skill_goro_2"
+    },
+    "grandline_skill_goro_3": {
+      "textures": "textures/grandline/items/skill_goro_3"
+    },
+    "grandline_skill_gura_1": {
+      "textures": "textures/grandline/items/skill_gura_1"
+    },
+    "grandline_skill_gura_2": {
+      "textures": "textures/grandline/items/skill_gura_2"
+    },
+    "grandline_skill_gura_3": {
+      "textures": "textures/grandline/items/skill_gura_3"
+    },
+    "grandline_skill_pika_1": {
+      "textures": "textures/grandline/items/skill_pika_1"
+    },
+    "grandline_skill_pika_2": {
+      "textures": "textures/grandline/items/skill_pika_2"
+    },
+    "grandline_skill_pika_3": {
+      "textures": "textures/grandline/items/skill_pika_3"
+    },
+    "grandline_raw_seastone": {
+      "textures": "textures/grandline/items/raw_seastone"
+    },
+    "grandline_seastone_ingot": {
+      "textures": "textures/grandline/items/seastone_ingot"
+    },
+    "grandline_seastone_cuffs": {
+      "textures": "textures/grandline/items/seastone_cuffs"
+    },
+    "grandline_seastone_jitte": {
+      "textures": "textures/grandline/items/seastone_jitte"
+    },
+    "grandline_wado_ichimonji": {
+      "textures": "textures/grandline/items/wado_ichimonji"
+    },
+    "grandline_black_blade": {
+      "textures": "textures/grandline/items/black_blade"
+    },
+    "grandline_treasure_chest": {
+      "textures": "textures/grandline/items/treasure_chest"
+    },
+    "grandline_jolly_roger": {
+      "textures": "textures/grandline/items/jolly_roger"
+    }
+  }
+}

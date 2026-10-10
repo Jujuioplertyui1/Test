@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grandline:seastone_jitte"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "N N",
+      " N ",
+      " S "
+    ],
+    "key": {
+      "N": {
+        "item": "grandline:seastone_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "grandline:seastone_ingot"
+      }
+    ],
+    "result": {
+      "item": "grandline:seastone_jitte",
+      "count": 1
+    }
+  }
+}

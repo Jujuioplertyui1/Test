@@ -1,0 +1,19 @@
+{
+  "name": "grandline-haki-clash",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Grand Line: Haki Clash - a One Piece add-on for Minecraft Bedrock",
+  "scripts": {
+    "check": "tsc -p tsconfig.json",
+    "bundle": "esbuild scripts-src/main.ts --bundle --format=esm --target=es2020 --platform=neutral --external:@minecraft/server --external:@minecraft/server-ui --legal-comments=none --outfile=packs/GrandLine_BP/scripts/main.js",
+    "content": "python3 tools/gen_content.py && python3 tools/gen_art.py",
+    "build": "npm run check && npm run content && npm run bundle && python3 tools/validate.py && python3 tools/build_addon.py",
+    "smoke": "node tools/smoke/sim.mjs"
+  },
+  "devDependencies": {
+    "@minecraft/server": "2.6.0",
+    "@minecraft/server-ui": "2.0.0",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.6.0"
+  }
+}

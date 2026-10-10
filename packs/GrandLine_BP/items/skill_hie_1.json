@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:skill_hie_1",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_skill_hie_1",
+      "minecraft:display_name": {
+        "value": "item.grandline.skill_hie_1.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:cooldown": {
+        "category": "grandline_hie_1",
+        "duration": 2.5
+      },
+      "grandline:skill": {
+        "fruit": "hie",
+        "slot": 1
+      }
+    }
+  }
+}

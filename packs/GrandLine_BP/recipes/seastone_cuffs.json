@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grandline:seastone_cuffs"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "NIN"
+    ],
+    "key": {
+      "N": {
+        "item": "grandline:seastone_ingot"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "grandline:seastone_ingot"
+      }
+    ],
+    "result": {
+      "item": "grandline:seastone_cuffs",
+      "count": 2
+    }
+  }
+}

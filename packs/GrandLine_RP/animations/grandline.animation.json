@@ -1,0 +1,681 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.grandline.humanoid.walk": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            "-math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed * 57.3",
+            0,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed * 57.3",
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed * 57.3 * 1.4",
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            "-math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed * 57.3 * 1.4",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.humanoid.look": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "query.target_x_rotation",
+            "query.target_y_rotation",
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.humanoid.idle": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            -8,
+            0,
+            "math.cos(query.life_time * 103.2) * 2.865 + 2.865"
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            0,
+            0,
+            "-(math.cos(query.life_time * 103.2) * 2.865 + 2.865)"
+          ]
+        }
+      }
+    },
+    "animation.grandline.humanoid.attack": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            "-math.sin(math.sqrt((variable.attack_time ?? 0.0)) * 180.0) * 95.0",
+            "math.sin(math.sqrt((variable.attack_time ?? 0.0)) * 360.0) * 20.0",
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            "math.sin(math.sqrt((variable.attack_time ?? 0.0)) * 360.0) * 11.46",
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.humanoid.ko": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2,
+            6
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            "math.sin(query.life_time * 200) * 15",
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.captain.coat": {
+      "loop": true,
+      "bones": {
+        "coat": {
+          "rotation": [
+            "-(6.0 + query.modified_move_speed * 50.0 + math.sin(query.life_time * 90.0) * 3.0 + (query.property('grandline:phase') == 2 ? math.sin(query.life_time * 420.0) * 7.0 + 10.0 : 0.0))",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.captain.roar": {
+      "animation_length": 1.4,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              -14,
+              0,
+              0
+            ],
+            "1.1": [
+              -14,
+              0,
+              0
+            ],
+            "1.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              -25,
+              0,
+              0
+            ],
+            "1.1": [
+              -25,
+              0,
+              0
+            ],
+            "1.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              -20,
+              0,
+              60
+            ],
+            "1.1": [
+              -20,
+              0,
+              65
+            ],
+            "1.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.25": [
+              -20,
+              0,
+              -60
+            ],
+            "1.1": [
+              -20,
+              0,
+              -65
+            ],
+            "1.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.captain.charge": {
+      "animation_length": 1.2,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              12,
+              0,
+              0
+            ],
+            "1.2": [
+              12,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              -1,
+              0
+            ],
+            "1.2": [
+              "math.sin(query.life_time * 2000) * 0.3",
+              -1,
+              0
+            ]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              -60,
+              30,
+              0
+            ],
+            "1.2": [
+              -60,
+              30,
+              0
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.3": [
+              -60,
+              -30,
+              0
+            ],
+            "1.2": [
+              -60,
+              -30,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.captain.clash": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            14,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            "-85 + math.sin(query.life_time * 1500) * 3",
+            0,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            10,
+            0,
+            -15
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -18,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            18,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.captain.leap": {
+      "animation_length": 0.9,
+      "bones": {
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              -170,
+              0,
+              0
+            ],
+            "0.7": [
+              -170,
+              0,
+              0
+            ],
+            "0.9": [
+              -30,
+              0,
+              0
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.2": [
+              -170,
+              0,
+              0
+            ],
+            "0.7": [
+              -170,
+              0,
+              0
+            ],
+            "0.9": [
+              -30,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.captain.punch": {
+      "animation_length": 0.5,
+      "bones": {
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.12": [
+              -90,
+              -10,
+              0
+            ],
+            "0.35": [
+              -90,
+              -10,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.12": [
+              0,
+              -20,
+              0
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.player.haoshoku": {
+      "animation_length": 1.2,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.15": [
+              -12,
+              0,
+              0
+            ],
+            "0.95": [
+              -12,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.15": [
+              -20,
+              0,
+              0
+            ],
+            "0.95": [
+              -20,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.15": [
+              0,
+              0,
+              25
+            ],
+            "0.95": [
+              0,
+              0,
+              25
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.15": [
+              0,
+              0,
+              -25
+            ],
+            "0.95": [
+              0,
+              0,
+              -25
+            ],
+            "1.2": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.player.clash": {
+      "animation_length": 10.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            12,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            "-85 + math.sin(query.life_time * 1500) * 3",
+            0,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            10,
+            0,
+            -15
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            15,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.grandline.player.punch": {
+      "animation_length": 0.4,
+      "bones": {
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.08": [
+              -90,
+              -15,
+              0
+            ],
+            "0.3": [
+              -90,
+              -15,
+              0
+            ],
+            "0.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.player.ko": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2,
+            6
+          ]
+        }
+      }
+    },
+    "animation.grandline.player.release": {
+      "animation_length": 0.3,
+      "bones": {
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              -60,
+              0,
+              0
+            ],
+            "0.3": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.grandline.projectile.trail": {
+      "loop": true,
+      "animation_length": 30,
+      "particle_effects": {
+        "0.0": {
+          "effect": "trail"
+        }
+      }
+    },
+    "animation.grandline.projectile.spin": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            0,
+            0,
+            "query.life_time * 720"
+          ]
+        }
+      }
+    },
+    "animation.grandline.pirate.flames": {
+      "loop": true,
+      "animation_length": 30,
+      "particle_effects": {
+        "0.0": {
+          "effect": "flames"
+        }
+      }
+    }
+  }
+}

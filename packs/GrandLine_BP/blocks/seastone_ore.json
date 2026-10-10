@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "grandline:seastone_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6
+      },
+      "minecraft:light_emission": 4,
+      "minecraft:map_color": "#3E8C9C",
+      "minecraft:loot": "loot_tables/blocks/seastone_ore.json",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "grandline_seastone_ore",
+          "render_method": "opaque"
+        }
+      },
+      "tag:stone": {}
+    }
+  }
+}

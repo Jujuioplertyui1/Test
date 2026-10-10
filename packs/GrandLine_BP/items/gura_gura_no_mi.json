@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:gura_gura_no_mi",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_gura_gura_no_mi",
+      "minecraft:display_name": {
+        "value": "item.grandline.gura_gura_no_mi.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": 0.3,
+        "can_always_eat": true
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "grandline:devil_fruit": {
+        "fruit": "gura"
+      }
+    }
+  }
+}

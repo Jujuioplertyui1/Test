@@ -1,0 +1,64 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§l§cGrand Line: Haki Clash §r§7(Behavior)",
+    "description": "One Piece add-on: Haki, Devil Fruits, Haki Clash and Varek the Crimson King. Inspired by One Piece & Rell Seas.",
+    "uuid": "133b8e21-d30c-4011-86a6-06791e422f5a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      10
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "03a2a59d-22dd-4012-ba16-08c342d3897b",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "00422abc-ebb6-4070-8bfb-c89dfb9e2855",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "84916923-8402-4112-90d4-927eaf2698c4",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.6.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "Jujuioplertyui1"
+    ],
+    "license": "MIT"
+  }
+}

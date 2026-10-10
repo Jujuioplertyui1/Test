@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:treasure_chest",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_treasure_chest",
+      "minecraft:display_name": {
+        "value": "item.grandline.treasure_chest.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "grandline:treasure": {}
+    }
+  }
+}

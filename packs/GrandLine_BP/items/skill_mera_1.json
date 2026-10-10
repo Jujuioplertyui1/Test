@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "grandline:skill_mera_1",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:icon": "grandline_skill_mera_1",
+      "minecraft:display_name": {
+        "value": "item.grandline.skill_mera_1.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:cooldown": {
+        "category": "grandline_mera_1",
+        "duration": 3.0
+      },
+      "grandline:skill": {
+        "fruit": "mera",
+        "slot": 1
+      }
+    }
+  }
+}

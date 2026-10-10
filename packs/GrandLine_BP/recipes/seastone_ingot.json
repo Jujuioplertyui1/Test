@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "grandline:seastone_ingot"
+    },
+    "tags": [
+      "furnace",
+      "blast_furnace"
+    ],
+    "input": "grandline:raw_seastone",
+    "output": "grandline:seastone_ingot"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "grandline:jolly_roger"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "WBW",
+      "WGW",
+      " S "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:black_wool"
+      },
+      "B": {
+        "item": "minecraft:bone"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "grandline:jolly_roger",
+      "count": 1
+    }
+  }
+}
